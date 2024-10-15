@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Finder</title>
+
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
         <header>
@@ -11,11 +13,31 @@
         </header>
 
         <main>
-            <input type="number" placeholder="Cpf aqui...">
+            
+            <div>
+                <input type="number" id="cep" placeholder="Cep aqui...">
+                <button>
+                    <img src="src/img/magnifier.svg" alt="Uma lupa preta represetando a pesquisa">
+                </button>
+            </div>
 
             <address>
-                
+                <ul>
+                    <li> Estado: <p id="">(Vazio)</p>
+                    </li>
+                    <li> Cidade: <p id="">(Vazio)</p>
+                    </li>
+                    <li> Bairro: <p id="">(Vazio)</p>
+                    </li>
+                    <li> Rua: <p id="">(Vazio)</p>
+                    </li>
+                    <li>Cep digitado: <p id="">(Vazio)</p> </li>
+                </ul>
             </address>
         </main>
+        <footer>
+            <p> &copy; 2024 <a href="https://github.com/devdaniel28">dvcDaniel</a></p>
+        </footer>
 </body>
+<script src="src/script.js"></script>
 </html>
